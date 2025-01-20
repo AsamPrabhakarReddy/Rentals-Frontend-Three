@@ -9,6 +9,9 @@ import { useNavigate } from "react-router-dom";
 import { showLoading, hideLoading } from "../redux/features/alertSlice";
 import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
+import Apple from "../assets/Apple.svg";
+import Google from "../assets/Google.svg";
+
 const Register = () => {
   const [error, setError] = useState(null); // To display any error messages
   const dispatch = useDispatch();
@@ -267,20 +270,12 @@ const Register = () => {
 
                         {/* Social Sign In Buttons */}
                         <button className="w-full flex text-black font-medium items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
-                          <img
-                            src="https://secure.meetupstatic.com/next/images/login/google.svg?w=48"
-                            alt=""
-                            className="w-5 h-5"
-                          />
+                          <img src={Google} alt="" className="w-5 h-5" />
                           Sign Up with Google
                         </button>
 
                         <button className="w-full flex text-black font-medium items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
-                          <img
-                            src="https://secure.meetupstatic.com/next/images/login/apple.svg?w=48"
-                            alt=""
-                            className="w-5 h-5"
-                          />
+                          <img src={Apple} alt="" className="w-5 h-5" />
                           Sign Up with Apple
                         </button>
 

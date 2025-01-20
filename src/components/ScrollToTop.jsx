@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { IoMdArrowRoundUp } from "react-icons/io";
+import { FaAngleUp } from "react-icons/fa";
 import { classNames } from "../components/classNames";
 
-const ScrollToTop = () => {
+const ContactUsButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => {
     if (window.pageYOffset > 200) {
@@ -29,19 +29,19 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed md:bottom-2 bottom-4 md:right-4 right-3 z-10">
+    <div className="fixed bottom-4 right-5 z-20">
       <button
         type="button"
         onClick={scrollToTop}
         className={classNames(
           isVisible ? "opacity-100" : "opacity-0",
-          "bg-mainColor hover:bg-colorOne transition duration-1000 ease-in-out inline-flex items-center rounded-full md:p-3 p-2 text-white shadow-sm "
+          "bg-mainColor hover:bg-colorOne transition duration-1000 ease-in-out inline-flex items-center rounded-full p-3 text-white shadow-sm "
         )}
       >
-        <IoMdArrowRoundUp className="h-6 w-6" aria-hidden="true" />
+        <FaAngleUp className="h-5 w-5" aria-hidden="true" />
       </button>
     </div>
   );
 };
 
-export default ScrollToTop;
+export default ContactUsButton;
