@@ -24,6 +24,7 @@ import AddTenantLeaseAgreement from "./pages/AddTenantLeaseAgreement";
 import Lease from "./pages/Lease";
 import LeaseCreateForm from "./pages/LeaseCreateForm";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
+import About from "./pages/About";
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -37,6 +38,15 @@ function App() {
             element={
               <PublicRoute>
                 <Home />
+              </PublicRoute>
+            }
+          ></Route>
+
+          <Route
+            path="/about-us"
+            element={
+              <PublicRoute>
+                <About />
               </PublicRoute>
             }
           ></Route>
@@ -126,9 +136,9 @@ function App() {
             }
           ></Route>
 
-{/* /addTenantLeaseAgreement/${property._Id}/${user._id}/${landlordLeaseAgreementID} */}
+          {/* /addTenantLeaseAgreement/${property._Id}/${user._id}/${landlordLeaseAgreementID} */}
 
-        <Route
+          <Route
             path="/addTenantLeaseAgreement/:propertyID/:customerID/:landlordLeaseAgreementID"
             element={
               <ProtectedRoute>
@@ -137,7 +147,7 @@ function App() {
             }
           ></Route>
 
-        <Route
+          <Route
             path="/lease-form/:propertyID"
             element={
               <ProtectedRoute>
@@ -159,7 +169,7 @@ function App() {
             path="/TermsAndConditions"
             element={
               <ProtectedRoute>
-                <TermsAndConditionsPage/>
+                <TermsAndConditionsPage />
               </ProtectedRoute>
             }
           ></Route>

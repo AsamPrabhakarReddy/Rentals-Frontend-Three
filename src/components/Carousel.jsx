@@ -7,7 +7,7 @@ const Carousel = () => {
   return (
     <div>
       <div className="bg-[#f8f9fa]">
-        <div className="relative pt-4 pb-12">
+        <div className="relative pt-24 pb-12">
           <div className="w-full">
             <div className="w-full px-4 mx-auto max-w-[1400px]">
               <div className="justify-center w-full ">

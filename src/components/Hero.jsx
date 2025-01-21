@@ -121,6 +121,7 @@
 import React, { useState, useEffect } from "react";
 import HeroImage from "../assets/HeroSix.jpg";
 import { motion, AnimatePresence } from "framer-motion";
+import { IoMdArrowDropright } from "react-icons/io";
 
 const Hero = () => {
   const slides = [
@@ -128,8 +129,8 @@ const Hero = () => {
       image: HeroImage,
       heading: "Streamline your rentals with us.",
       paragraph:
-        "Alcheminds Solutions is aiming to make the businesses transition their IT to a Service Oriented Architecture.",
-      buttonText: "Connect With Us",
+        "Feel good about the way you manage your rentals with us.",
+      buttonText: "Join RMA Housing",
       buttonLink: "/contact-alcheminds",
     },
   ];
@@ -172,9 +173,12 @@ const Hero = () => {
         </p>
         <a
           href={slides[currentIndex].buttonLink}
-          className="mt-8 inline-block px-6 py-3 border-[1px] border-navGray text-white rounded text-lg font-light transition hover:bg-opacity-90"
+          className="flex flex-row justify-center items-center mt-8 inline-block px-[40px] py-3 border-[1px] bg-white border-white text-[#1a1a1a] rounded-full text-lg transition "
         >
+
           {slides[currentIndex].buttonText}
+          <IoMdArrowDropright className="w-4 h-4 ml-1" />
+
         </a>
       </div>
     </section>
