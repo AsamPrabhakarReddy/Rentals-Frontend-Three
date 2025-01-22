@@ -25,6 +25,8 @@ import Lease from "./pages/Lease";
 import LeaseCreateForm from "./pages/LeaseCreateForm";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Testimonials from "./pages/Testimonials";
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -50,6 +52,23 @@ function App() {
               </PublicRoute>
             }
           ></Route>
+          <Route
+            path="/contact-us"
+            element={
+              <PublicRoute>
+                <Contact />
+              </PublicRoute>
+            }
+          ></Route>
+          <Route
+            path="/testimonials"
+            element={
+              <PublicRoute>
+                <Testimonials />
+              </PublicRoute>
+            }
+          ></Route>
+
           <Route
             path="/pricing"
             element={

@@ -7,16 +7,19 @@ import Footer from "./../components/Footer";
 import ScrollToTop from "./../components/ScrollToTop";
 import MainLayout from "./../components/MainLayout";
 import Navbar from "./../components/Navbar";
-
+import AboutOne from "../components/AboutOne";
+import AboutTwo from "../components/AboutTwo";
 const About = () => {
   return (
     <div>
       {/* <NavBar /> */}
       <Navbar />
-      <ScrollToTop />
+      <AboutOne/>
+      <AboutTwo/>
+      {/* <ScrollToTop /> */}
       {/* <Hero /> */}
-      <Carousel />
-      <Reviews />
+      {/* <Carousel /> */}
+      {/* <Reviews /> */}
       <Footer />
     </div>
   );

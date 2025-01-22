@@ -2,8 +2,8 @@ import Star from "../assets/Star.svg";
 
 const Reviews = () => {
   return (
-    <section>
-      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12 flex justify-center flex-col">
+    <section className="pt-10"> 
+      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12 flex justify-center flex-col ">
         <div className="py-8">
           <div className="text-center flex justify-center items-center">
             <h1 className="font-bold md:text-5xl text-4xl">
@@ -106,6 +106,96 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="flex md:justify-start justify-center">
+                <div className="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
+                  <div className="space-y-4">
+                    <div>
+                      <h2 className="text-sm text-gray-400">
+                        alshya belgium
+                      </h2>
+                    </div>
+                    <div className="flex flex-row">
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h1 className="font-semibold text-2xl">
+                      Easy to Use and Organized Platform
+                      </h1>
+                    </div>
+                    <div>
+                      <p>
+                      The platform is incredibly user-friendly. It’s easy to manage my properties, and I love how it helps me stay organized. The mobile app is intuitive, and the ability to connect with tenants directly makes everything so much smoother.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="flex md:justify-start justify-center">
+                <div className="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
+                  <div className="space-y-4">
+                    <div>
+                      <h2 className="text-sm text-gray-400">
+                       gabriew gabel
+                      </h2>
+                    </div>
+                    <div className="flex flex-row">
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h1 className="font-semibold text-2xl">
+                      Seamless Experience for Landlords and Tenants
+                      </h1>
+                    </div>
+                    <div>
+                      <p>
+                      RMA Housing offers a seamless experience for both landlords and tenants. The features are robust, and I appreciate the real-time updates. The mobile app is handy and keeps me informed even when I’m on the go.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex md:justify-start justify-center">
+                <div className="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
+                  <div className="space-y-4">
+                    <div>
+                      <h2 className="text-sm text-gray-400">
+                        suneel narine
+                      </h2>
+                    </div>
+                    <div className="flex flex-row">
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h1 className="font-semibold text-2xl">
+                      Efficient Streamlined Rental Process
+                      </h1>
+                    </div>
+                    <div>
+                      <p>
+                      I’ve been using RMA Housing for a while now, and I’m impressed with how efficiently it streamlines the rental process. It’s easy to track payments, screen tenants, and sign leases. The mobile app works great for managing everything on the go.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>

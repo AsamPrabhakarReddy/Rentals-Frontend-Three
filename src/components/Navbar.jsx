@@ -539,7 +539,7 @@ const ContactBar = () => {
   return (
     <div className="grid grid-cols-3 gap-4 ">
       <a
-        href="/learn-about-us"
+        href="/about-us"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaNewspaper className="mb-2 text-xl text-mainColor" />
@@ -548,7 +548,7 @@ const ContactBar = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/contact-us"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdArticle className="mb-2 text-xl text-mainColor" />
@@ -557,7 +557,7 @@ const ContactBar = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/testimonials"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdArticle className="mb-2 text-xl text-mainColor" />
