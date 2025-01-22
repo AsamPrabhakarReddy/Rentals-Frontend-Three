@@ -69,10 +69,10 @@ const Login = () => {
             <div className="lg:mt-28 mt-20">
               <div className="flex flex-col justify-center px-6 pb-8">
                 <div className="flex justify-center items-center">
-                  <div className="w-full bg-white rounded-lg shadow md:mt-0 xl:p-0 max-w-md">
+                  <div className="w-full bg-white rounded-lg shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:mt-0 xl:p-0 max-w-md">
                     <div className="p-6 space-y-4 sm:p-8">
-                      <h1 className="text-3xl text-center font-semibold text-colorThree ">
-                        Please log in.
+                      <h1 className="text-2xl text-center font-bold text-colorThree ">
+                        Log in to RMA Housing
                       </h1>
                       <form
                         className="space-y-4 md:space-y-6"

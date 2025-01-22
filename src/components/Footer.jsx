@@ -10,8 +10,8 @@ const Footer = () => {
       <footer className="text-base">
         <div className="w-full max-w-screen px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
           <div className="pb-8 mb-8 border-b border-gray-400">
-            <div className="grid grid-cols-2 md:grid-cols-5 ">
-              <div className="mb-12 md:mb-0 ">
+            <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-7 ">
+              <div className="mb-12 md:mb-4 ">
                 <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
                   Services
                 </h4>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="mb-12 md:mb-0 ">
+              <div className="mb-12 md:mb-4 ">
                 <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
                   Connect
                 </h4>
@@ -107,7 +107,55 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="mb-12 md:mb-0">
+              <div className="mb-12 md:mb-4 ">
+                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                  Connect
+                </h4>
+                <ul className="pl-0 mt-4 space-y-3 list-none">
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/contact"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Help Center
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Rentals Careers
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Become Partner
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/register"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Sign Up Here
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/about"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Team & Company
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-12 md:mb-4">
                 <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
                   Company
                 </h4>
@@ -155,7 +203,55 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="mb-12 md:mb-0 md:hidden block">
+              <div className="mb-12 md:mb-4">
+                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                  Company
+                </h4>
+                <ul className="pl-0 mt-4 space-y-3 list-none">
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/privacy"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/privacy"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/about"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      About Rentals
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/contact"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                  <li className=" flex items-center justify-center">
+                    <a
+                      href="/about"
+                      className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
+                    >
+                      Why Rentals?
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-12 md:mb-4 md:hidden block">
                 <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
                   Product
                 </h4>
@@ -203,7 +299,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="mb-12 md:mb-0 col-span-2">
+              <div className="mb-12 md:mb-4 col-span-2">
                 <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
                   Contact Us
                 </h4>
@@ -274,7 +370,7 @@ const Footer = () => {
               className="flex justify-center items-center mt-6"
             >
               <p className="md:text-sm text-xs text-footerLinks">
-                Copyright © 2024 Property Management. All rights reserved.
+                Copyright © 2025 RMA Housing. All rights reserved.
               </p>
             </a>
           </div>

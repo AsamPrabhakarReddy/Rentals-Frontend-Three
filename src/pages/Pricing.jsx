@@ -68,19 +68,20 @@ const Pricing = () => {
     <div>
       <Navbar />
       <ScrollToTop />
-      <div className="mt-28">
+      <div className="pt-32">
         <div className="relative">
           <div className="w-full">
             <div className="w-full px-4 mx-auto max-w-[1400px] pb-8">
               <div className="space-y-2">
                 <div className="md:text-4xl text-3xl font-bold text-headingColor text-center">
-                  <h1>Find your perfect plan</h1>
+                  <h1>Discover the ideal plan for you</h1>
                 </div>
 
                 <div className="text-center">
                   <p className="text-sideHeading">
-                    No matter which level you choose, you’re instantly connected
-                    to a powerful network group and the rewards are AMAZING!
+                    Choose a pricing plan tailored to your needs, ensuring
+                    flexibility, affordability, and the best value for your
+                    goals.
                   </p>
                 </div>
               </div>
@@ -175,7 +176,7 @@ const Pricing = () => {
                           </ul>
                           <a
                             href="/login"
-                            class="text-white bg-mainColor font-medium rounded-full text-sm px-5 py-2.5 my-3 text-center "
+                            class="text-white bg-mainColor font-medium rounded-full text-sm px-8 py-3 my-3 text-center "
                           >
                             Get started
                           </a>

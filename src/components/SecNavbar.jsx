@@ -1,12 +1,33 @@
-import { useState, useEffect } from "react";
-import { RiMenu3Fill } from "react-icons/ri";
-import { AiOutlineClose } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-// import logo from "../assets/logo.png";
-// import heroimg from "../assets/HeroLogo.png";
 import { FaThreads } from "react-icons/fa6";
+import React, { useState, useEffect } from "react";
+import { RiCriminalFill, RiGuideFill, RiMenu3Fill } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
+import {
+  MdAccountBalanceWallet,
+  MdArticle,
+  MdCable,
+  MdOutlineHomeRepairService,
+  MdOutlineWorkHistory,
+  MdPayment,
+} from "react-icons/md";
+import {
+  FaCalculator,
+  FaCreditCard,
+  FaDollarSign,
+  FaHouseCircleCheck,
+  FaLocationArrow,
+  FaNewspaper,
+  FaUser,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { FaInstagram, FaUserAlt } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiChevronDown, FiPaperclip, FiPieChart } from "react-icons/fi";
+import { AnimatePresence, motion } from "framer-motion";
+import { GrResources, GrTechnology } from "react-icons/gr";
+import { IoTicketSharp } from "react-icons/io5";
+import { VscLaw } from "react-icons/vsc";
+import HomeImg from "../assets/Home.svg";
 
 const SecNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,119 +53,37 @@ const SecNavbar = () => {
       }`}
     >
       <div
-        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-4 lg:bg-navColor ${
-          isScrolled ? "lg:py-0" : "lg:py-2"
+        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6 lg:bg-navColor ${
+          isScrolled ? "lg:py-0" : "lg:py-[12px]"
         }`}
       >
-        {/* <a href="/" className="flex flex-row items-center md:ml-0 ml-1  ">
-          <img
-            src={isScrolled ? logo : heroimg}
-            className="lg:w-48 w-44 h-auto "
-            alt="logo"
-          />
-        </a> */}
-        <a href="/" className="flex items-center">
-          <div
-            className={`h-12 w-12 bg-mainColor rounded-full flex items-center justify-center text-white font-bold transition-all duration-300 ease-in-out ${
-              isScrolled ? "w-12 h-12 rounded-full" : "w-10 h-10 rounded-full"
-            }`}
-          >
-            RMA
-          </div>
+        <a href="/" className="flex items-center flex-row">
+          <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6" />
 
           <span
-            className={`text-2xl ml-1 transition-all duration-300 ease-in-out ${
+            className={`lg:text-2xl text-xl ml-1 mt-[2px] transition-all duration-300 ease-in-out ${
               isScrolled ? "font-bold text-black" : "text-white font-semibold"
             }`}
           >
-            Housing.
+            RMA Housing.
           </span>
         </a>
 
-        {/* Desktop Nav Links */}
         <ul className="hidden lg:flex flex-grow justify-center space-x-8 items-center">
-          <li
-            className={` group transition  duration-300  ${
-              isScrolled
-                ? "text-footerHeading font-normal hover:text-colorFour transition ease-in-out duration-500"
-                : "text-white hover:text-colorFour transition ease-in-out duration-500"
-            }`}
+          <Tabs />
+          <a
+            href="/pricing"
+            className={` ${isScrolled ? "text-black" : "text-white"}`}
           >
-            <a href="/">Home</a>
-            <div
-              className={` h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-white"
-              }`}
-            ></div>
-          </li>
-
-          <li
-            className={` group transition font-normal duration-300 ${
-              isScrolled
-                ? "text-footerHeading hover:text-colorFour transition ease-in-out duration-500"
-                : "text-white hover:text-colorFour transition ease-in-out duration-500"
-            }`}
-          >
-            <a href="/about-us">About Us</a>
-            <div
-              className={` h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-white"
-              }`}
-            ></div>
-          </li>
-
-          <li
-            className={` group transition font-normal duration-300 ${
-              isScrolled
-                ? "text-footerHeading hover:text-colorFour transition ease-in-out duration-500"
-                : "text-white hover:text-colorFour transition ease-in-out duration-500"
-            }`}
-          >
-            <a href="/our-services">Services</a>
-            <div
-              className={` h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-white"
-              }`}
-            ></div>
-          </li>
-
-          <li
-            className={` group transition font-normal duration-300 ${
-              isScrolled
-                ? "text-footerHeading hover:text-colorFour transition ease-in-out duration-500"
-                : "text-white hover:text-colorFour transition ease-in-out duration-500"
-            }`}
-          >
-            <a href="/our-products">Products</a>
-            <div
-              className={` h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-white"
-              }`}
-            ></div>
-          </li>
-
-          <li
-            className={` group transition font-normal duration-300 ${
-              isScrolled
-                ? "text-footerHeading hover:text-colorFour transition ease-in-out duration-500"
-                : "text-white hover:text-colorFour transition ease-in-out duration-500"
-            }`}
-          >
-            <a href="/pricing">Pricing</a>
-            <div
-              className={` h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-white"
-              }`}
-            ></div>
-          </li>
+            Pricing
+          </a>
         </ul>
 
         {/* Login Button */}
         <div className="hidden lg:flex space-x-4">
           <a
             href="/login"
-            // className="uppercase border-[1px] relative lg:px-6 md:px-4 py-2 rounded bg-colorFour text-sm border-colorFour hover:border-colorFour text-white font-medium overflow-hidden transition-all duration-500 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-white before:duration-500 before:ease-out hover:text-colorFour hover:before:h-40 hover:before:w-48 "
-            className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded-full text-sm border-mainColor transition duration-500 bg-mainColor ${
+            className={`border-[1px] relative px-8 py-[10px] rounded-full text-sm border-mainColor transition duration-500 bg-mainColor ${
               isScrolled
                 ? "border-mainColor bg-mainColor text-white font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0  before:duration-300 before:ease-out hover:text-white hover:before:h-40 hover:before:w-48 "
                 : "border-navGray font-medium text-white"
@@ -282,3 +221,379 @@ const SecNavbar = () => {
 };
 
 export default SecNavbar;
+
+const Tabs = () => {
+  const [selected, setSelected] = useState(null);
+  const [dir, setDir] = useState(null);
+
+  const handleSetSelected = (val) => {
+    if (typeof selected === "number" && typeof val === "number") {
+      setDir(selected > val ? "r" : "l");
+    } else if (val === null) {
+      setDir(null);
+    }
+
+    setSelected(val);
+  };
+
+  return (
+    <div
+      onMouseLeave={() => handleSetSelected(null)}
+      className="relative flex h-fit gap-2 "
+    >
+      {TABS.map((t) => {
+        return (
+          <Tab
+            key={t.id}
+            selected={selected}
+            handleSetSelected={handleSetSelected}
+            tab={t.id}
+          >
+            {t.title}
+          </Tab>
+        );
+      })}
+
+      <AnimatePresence>
+        {selected && <Content dir={dir} selected={selected} />}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+const Tab = ({ children, tab, handleSetSelected, selected }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight / 4) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <button
+      id={`shift-tab-${tab}`}
+      onMouseEnter={() => handleSetSelected(tab)}
+      onClick={() => handleSetSelected(tab)}
+      className={`flex items-center gap-1 rounded-full md:text-sm lg:text-base px-3 py-1.5 transition-colors  ${
+        isScrolled ? "text-black" : "text-white"
+      }  ${selected === tab ? "text-black" : "text-black"}`}
+    >
+      <span>{children}</span>
+      <FiChevronDown
+        className={`transition-transform ${
+          selected === tab ? "rotate-180" : ""
+        }`}
+      />
+    </button>
+  );
+};
+
+const Content = ({ selected, dir }) => {
+  return (
+    <motion.div
+      id="overlay-content"
+      initial={{
+        opacity: 0,
+        y: 8,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      exit={{
+        opacity: 0,
+        y: 8,
+      }}
+      className="absolute left-0 top-[calc(100%_+_24px)] w-[100%] bg-white rounded-lg shadow p-4"
+    >
+      <Bridge />
+      <Nub selected={selected} />
+
+      {TABS.map((t) => {
+        return (
+          <div className="overflow-hidden " key={t.id}>
+            {selected === t.id && (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  x: dir === "l" ? 100 : dir === "r" ? -100 : 0,
+                }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+              >
+                <t.Component />
+              </motion.div>
+            )}
+          </div>
+        );
+      })}
+    </motion.div>
+  );
+};
+
+const Bridge = () => (
+  <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
+);
+
+const Nub = ({ selected }) => {
+  const [left, setLeft] = useState(0);
+
+  useEffect(() => {
+    moveNub();
+  }, [selected]);
+
+  const moveNub = () => {
+    if (selected) {
+      const hoveredTab = document.getElementById(`shift-tab-${selected}`);
+      const overlayContent = document.getElementById("overlay-content");
+
+      if (!hoveredTab || !overlayContent) return;
+
+      const tabRect = hoveredTab.getBoundingClientRect();
+      const { left: contentLeft } = overlayContent.getBoundingClientRect();
+
+      const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
+
+      setLeft(tabCenter);
+    }
+  };
+
+  return (
+    <motion.span
+      style={{
+        clipPath: "polygon(0 0, 100% 0, 50% 50%, 0% 100%)",
+      }}
+      animate={{ left }}
+      transition={{ duration: 0.25, ease: "easeInOut" }}
+      className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl bg-white"
+    />
+  );
+};
+
+const Blog = () => {
+  return (
+    <div className="grid grid-cols-3 gap-4 ">
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaUser className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Renter Profile
+        </span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <MdCable className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Online Rent Payments
+        </span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FiPaperclip className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Digital Lease
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <IoTicketSharp className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Maintenance Tickets
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaCreditCard className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Credit Boost
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaLocationArrow className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Find Next Place
+        </span>
+      </a>
+    </div>
+  );
+};
+
+const Homebar = () => {
+  return (
+    <div className="grid grid-cols-4 gap-4 ">
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaHouseCircleCheck className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Rental Listings
+        </span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaDollarSign className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Rental Applications
+        </span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaUserAlt className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Tenant Screening
+        </span>
+      </a>
+
+    
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FiPieChart className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Digital Leases
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <GrTechnology className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Online Rent Collection
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <MdPayment className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">Fastpay</span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <MdOutlineHomeRepairService className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Maintenance Tracking
+        </span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <MdOutlineWorkHistory className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Rent Price Analysis
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaCalculator className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Rent Property Calculator
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <MdAccountBalanceWallet className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Property Accounting
+        </span>
+      </a>
+
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <RiCriminalFill className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Credit, Criminal, Eviction Reports
+        </span>
+      </a>
+    </div>
+  );
+};
+
+const ContactBar = () => {
+  return (
+    <div className="grid grid-cols-3 gap-4 ">
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <FaNewspaper className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">About Us</span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <MdArticle className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">Contact Us</span>
+      </a>
+      <a
+        href="/about-us"
+        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+      >
+        <RiGuideFill className="mb-2 text-xl text-mainColor" />
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Testimonials
+        </span>
+      </a>
+    </div>
+  );
+};
+
+const TABS = [
+  { title: "Landlords", Component: Homebar },
+  {
+    title: "Tenants",
+    Component: Blog,
+  },
+  {
+    title: "Resources",
+    Component: ContactBar,
+  },
+].map((n, idx) => ({ ...n, id: idx + 1 }));

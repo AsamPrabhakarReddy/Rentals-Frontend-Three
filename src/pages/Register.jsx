@@ -104,10 +104,10 @@ const Register = () => {
             <div className="lg:mt-28 mt-20">
               <div className="flex flex-col justify-center px-6 pb-8">
                 <div className="flex justify-center items-center">
-                  <div className="w-full bg-white rounded-lg shadow md:mt-0 xl:p-0 max-w-md">
+                  <div className="w-full bg-white rounded-lg shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:mt-0 xl:p-0 max-w-md">
                     <div className="p-6 space-y-4 sm:p-8">
-                      <h1 className="text-3xl text-center font-semibold text-colorThree">
-                        Get started with us
+                      <h1 className="text-2xl text-center font-bold text-colorThree">
+                        Sign up to your account
                       </h1>
                       <form
                         className="space-y-4 md:space-y-6"
@@ -253,7 +253,7 @@ const Register = () => {
                               : "bg-[#f8f9fa] cursor-not-allowed text-gray-400"
                           }`}
                         >
-                          Sign Up{" "}
+                          Sign up{" "}
                           {role &&
                             `as ${
                               role.charAt(0).toUpperCase() + role.slice(1)

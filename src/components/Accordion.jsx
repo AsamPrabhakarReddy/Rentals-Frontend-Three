@@ -5,7 +5,7 @@ const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="py-6 md:border-b-[0px] border-b-[1px] md:mt-2 md:bg-[#f8f9fa] rounded md:pt-0 pt-2 text-lg">
+    <div className="py-6 md:border-b-[0px] border-b-[1px] md:mt-2 md:bg-[#f8f9fa] rounded md:pt-0 pt-2 ">
       <button
         onClick={() => {
           setAccordionOpen(!accordionOpen);
@@ -19,7 +19,7 @@ const Accordion = ({ title, answer }) => {
         </div>
         <div className="px-4 pt-3 md:pt-6">
           {accordionOpen ? (
-            <FaAngleDown color="red" />
+            <FaAngleDown color="Purple" />
           ) : (
             <FaAngleRight className="text-headingColor" />
           )}
@@ -33,7 +33,7 @@ const Accordion = ({ title, answer }) => {
         }`}
       >
         <div className="overflow-hidden md:mx-0 mx-1 md:text-start text-center md:pl-8">
-          <span className="text-lg text-headingColor">{answer}</span>
+          <span className="md:text-lg text-headingColor">{answer}</span>
         </div>
       </div>
     </div>

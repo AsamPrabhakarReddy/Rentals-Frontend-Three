@@ -10,7 +10,7 @@ import Select from "react-select";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import "./PhoneInput.css";
-import { Country, State, City } from "country-state-city";
+// import { Country, State, City } from "country-state-city";
 
 const Profile = () => {
   const { user } = useSelector((state) => state.user);
@@ -214,7 +214,7 @@ const Profile = () => {
                     </Form.Item>
                   </Col>
 
-                  <Col xs={24} md={24} lg={8}>
+                  {/* <Col xs={24} md={24} lg={8}>
                     <Form.Item
                       label="Country"
                       name="selectedCountry"
@@ -289,7 +289,7 @@ const Profile = () => {
                         }}
                       />
                     </Form.Item>
-                  </Col>
+                  </Col> */}
 
                   <Col xs={24} md={24} lg={8}>
                     <Form.Item

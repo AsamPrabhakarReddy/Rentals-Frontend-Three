@@ -3,33 +3,33 @@ import Star from "../assets/Star.svg";
 const Reviews = () => {
   return (
     <section>
-      <div class="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12 flex justify-center flex-col">
-        <div class="py-8">
-          <div class="text-center flex justify-center items-center">
-            <h1 class="font-bold md:text-5xl text-4xl">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12 flex justify-center flex-col">
+        <div className="py-8">
+          <div className="text-center flex justify-center items-center">
+            <h1 className="font-bold md:text-5xl text-4xl">
               Real stories, Real results
             </h1>
           </div>
 
-          <div class="pt-16">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4">
-              <div class="flex md:justify-start justify-center">
-                <div class="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
-                  <div class="space-y-4">
+          <div className="pt-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4">
+              <div className="flex md:justify-start justify-center">
+                <div className="w-full max-w-sm p-4 shadow rounded-lg border-colorFour border-[1px]">
+                  <div className="space-y-4">
                     <div>
-                      <h2 class="text-sm text-gray-400">
+                      <h2 className="text-sm text-gray-400">
                         Dean C., Senior Software Engineer
                       </h2>
                     </div>
-                    <div class="flex flex-row">
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
+                    <div className="flex flex-row">
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
                     </div>
                     <div>
-                      <h1 class="font-semibold text-2xl">
+                      <h1 className="font-semibold text-2xl">
                         Great experience so far
                       </h1>
                     </div>
@@ -44,23 +44,23 @@ const Reviews = () => {
                 </div>
               </div>
 
-              <div class="flex md:justify-start justify-center">
-                <div class="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
-                  <div class="space-y-4">
+              <div className="flex md:justify-start justify-center">
+                <div className="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
+                  <div className="space-y-4">
                     <div>
-                      <h2 class="text-sm text-gray-400">
+                      <h2 className="text-sm text-gray-400">
                         Roberto B., Executive Vice President
                       </h2>
                     </div>
-                    <div class="flex flex-row">
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
+                    <div className="flex flex-row">
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
                     </div>
                     <div>
-                      <h1 class="font-semibold text-2xl">
+                      <h1 className="font-semibold text-2xl">
                         Simple and precious
                       </h1>
                     </div>
@@ -76,23 +76,23 @@ const Reviews = () => {
                 </div>
               </div>
 
-              <div class="flex md:justify-start justify-center">
-                <div class="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
-                  <div class="space-y-4">
+              <div className="flex md:justify-start justify-center">
+                <div className="w-full max-w-sm p-4 shadow rounded-lg sm:p-6 md:p-8 border-colorFour border-[1px]">
+                  <div className="space-y-4">
                     <div>
-                      <h2 class="text-sm text-gray-400">
+                      <h2 className="text-sm text-gray-400">
                         Lee E., Director of Information Technology
                       </h2>
                     </div>
-                    <div class="flex flex-row">
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
-                      <img src={Star} alt="" class="w-5 h-5" />
+                    <div className="flex flex-row">
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
+                      <img src={Star} alt="star" className="w-5 h-5" />
                     </div>
                     <div>
-                      <h1 class="font-semibold text-2xl">
+                      <h1 className="font-semibold text-2xl">
                         Simple and affordable
                       </h1>
                     </div>
