@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { RiCriminalFill, RiGuideFill, RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import {
   MdAccountBalanceWallet,
   MdArticle,
@@ -29,10 +29,32 @@ import { GrResources, GrTechnology } from "react-icons/gr";
 import { IoTicketSharp } from "react-icons/io5";
 import { VscLaw } from "react-icons/vsc";
 import HomeImg from "../assets/Home.svg";
+import { FaAngleDown } from "react-icons/fa";
+// import { AnimatePresence, motion } from "framer-motion";
+import { SiPaloaltosoftware } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  // const [isScrolled, setIsScrolled] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // const handleScroll = () => {
+  //   if (window.scrollY > window.innerHeight / 4) {
+  //     setIsScrolled(true);
+  //   } else {
+  //     setIsScrolled(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
   const [isScrolled, setIsScrolled] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdownMobile, setOpenDropdownMobile] = useState(null);
 
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight / 4) {
@@ -46,6 +68,18 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleDropdown = (dropdown) => {
+    if (openDropdown === dropdown) {
+      setOpenDropdown(null);
+    } else {
+      setOpenDropdown(dropdown);
+    }
+  };
+
+  const toggleMobileDropdown = (dropdown) => {
+    setOpenDropdownMobile((prev) => (prev === dropdown ? null : dropdown));
+  };
 
   return (
     <nav
@@ -109,77 +143,292 @@ const Navbar = () => {
           className={
             !isMobileMenuOpen
               ? "lg:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-              : "lg:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-white ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              : "lg:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-gray-300 ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
-          {/* <a href="/" className="flex ml-6 mt-6">
-            <img src={logo} className="lg:w-48 w-44 h-auto" alt="logo" />
-          </a> */}
-
-          <a href="/">
+          {/* <a href="/">
             <h1 className="w-full text-2xl text-mainColor font-bold m-4 cursor-pointer">
               RMA <span className="text-black">Housing.</span>
             </h1>
-          </a>
+          </a> */}
+
+          <a href="/" className="flex items-center flex-row ml-4 pt-4 ">
+          <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6 " />
+            <span className="lg:text-2xl text-xl ml-1 mt-[2px] transition-all duration-300 ease-in-out font-bold">RMA Housing.</span>
+        </a>
 
           <ul className="p-4">
-            <li className="p-4 border-b border-gray-400">
-              <a
-                href="/"
-                className="flex items-center justify-between cursor-pointer text-footerLinks "
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("subscription")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
-                Home
+                Landlord
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "subscription"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "subscription" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Rental Listings
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Rental Applications
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                       Tenant Screening
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Credit, Criminal, Eviction Reports
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Digital Leases
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                       Online Rent Collection
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                       FastPay
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Maintenance Tracking
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                       Rent Price Analysis
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                       Rental Property Calculator
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Property Accounting
+                      </a>
+                    </li>
+                   
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("home")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Tenants
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "home"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "home" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                   <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                       Renter Profile
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                       Online Rent Payments
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Digital Lease Signing
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                       Maintenance Tickets
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                      CreditBoost
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Find Next Place
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("products")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Resources
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "products"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "products" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
+                      <a
+                        href="/about-us"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                         About Us
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/contact-us"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                         Contact Us
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/testimonials"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                        Testimonials
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/login"
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Login
               </a>
             </li>
 
-            <li className="p-4 border-b border-gray-400">
+            <li className="p-4 border-b border-gray-600">
               <a
-                href="/why-alcheminds"
-                className="flex items-center justify-between cursor-pointer text-footerLinks "
+                href="/register"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
-                About Us
+                Register
               </a>
             </li>
+            
 
-            <li className="p-4 border-b border-gray-400">
+            <li className="p-4 border-b border-gray-600">
               <a
-                href="/our-services"
-                className="flex items-center justify-between cursor-pointer text-footerLinks"
-              >
-                Services
-              </a>
-            </li>
-
-            <li className="p-4 border-b border-gray-400">
-              <a
-                href="/our-products"
-                className="flex items-center justify-between cursor-pointer text-footerLinks"
-              >
-                Products
-              </a>
-            </li>
-
-            <li className="p-4 border-b border-gray-400">
-              <a
-                href="/careers"
-                className="flex items-center justify-between cursor-pointer text-footerLinks"
-              >
-                Careers
-              </a>
-            </li>
-            {/* <li className="p-4 border-b border-gray-400">
-              <a
-                href="/our-network"
-                className="flex items-center justify-between cursor-pointer text-footerLinks"
-              >
-                Network
-              </a>
-            </li> */}
-
-            <li className="p-4 border-b border-gray-400">
-              <a
-                href="/contact-alcheminds"
-                className="flex items-center justify-between cursor-pointer text-footerLinks "
+                href="/contact-us"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Contact Us
               </a>
@@ -199,17 +448,16 @@ const Navbar = () => {
                   <FaXTwitter className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
                 <a href="">
-                  {" "}
                   <FaInstagram className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
                 <a href="">
-                  {" "}
                   <FaFacebookF className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </nav>
   );
