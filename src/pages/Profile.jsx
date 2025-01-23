@@ -108,7 +108,7 @@ const Profile = () => {
                   <img
                     src="https://s3.amazonaws.com/37assets/svn/765-default-avatar.png"
                     className="rounded-lg w-[90px] h-[90px]"
-                    alt=""
+                    alt="images"
                   />
                 </div>
 

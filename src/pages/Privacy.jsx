@@ -30,7 +30,7 @@ const Privacy = () => {
               <div className="my-4">
                 <img
                   src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/privacy_landing_main_2800X1000?scl=1"
-                  alt=""
+                  alt="images"
                   className="rounded"
                 />
               </div>
@@ -59,7 +59,7 @@ const Privacy = () => {
                         <img
                           src="
                          https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/privacy_dashboard_card_809X461?wid=517&hei=291&fit=crop"
-                          alt=""
+                          alt="images"
                           className="md:h-52 w-[100%] rounded"
                         />
                       </div>
@@ -90,7 +90,7 @@ const Privacy = () => {
                         <img
                           src="
                             https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/privacy_account_checkup_card_809X461?wid=517&hei=291&fit=crop"
-                          alt=""
+                          alt="images"
                           //   className="md:h-52 md:w-[70%] w-[80%]"
                           className="md:h-52 w-[100%] rounded"
                         />
@@ -130,7 +130,7 @@ const Privacy = () => {
                         <img
                           src="
                            https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/privacy_controls_card_809X461?wid=517&hei=291&fit=crop"
-                          alt=""
+                          alt="images"
                           className="md:h-52 w-[100%] rounded"
                         />
                       </div>
@@ -193,7 +193,7 @@ const Privacy = () => {
                 <div>
                   <img
                     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/privacy_data_protection_1376X920:VP5-800x450"
-                    alt=""
+                    alt="images"
                     className="rounded"
                   />
                 </div>
@@ -296,7 +296,7 @@ const Privacy = () => {
                         <img
                           src="
                            https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/GDPR_and_generative_AI_A%20guide_for_the_public_sector?wid=406&hei=230&fit=crop"
-                          alt=""
+                          alt="images"
                           className="md:h-52 w-[100%] rounded"
                         />
                       </div>
@@ -337,7 +337,7 @@ const Privacy = () => {
                         <img
                           src="
                           https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Protecting_the_data_of_our_commercial_and_public_sector_customers_in_the_AI_era?wid=380&hei=213&fit=crop"
-                          alt=""
+                          alt="images"
                           className="md:h-52 w-[100%] rounded"
                         />
                       </div>
@@ -379,7 +379,7 @@ const Privacy = () => {
                         <img
                           src="
                            https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Enhancing_trust_and_protecting_privacy_in_the_AI_era?wid=380&hei=213&fit=crop"
-                          alt=""
+                          alt="images"
                           //   className="md:h-52 md:w-[70%] w-[80%]"
                           className="md:h-52 w-[100%] rounded"
                         />
@@ -420,7 +420,7 @@ const Privacy = () => {
                         <img
                           src="
                         https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/EU-Data-Boundary-Blog-image-1-small?wid=380&hei=213&fit=crop"
-                          alt=""
+                          alt="images"
                           className="md:h-52 w-[100%] rounded"
                         />
                       </div>

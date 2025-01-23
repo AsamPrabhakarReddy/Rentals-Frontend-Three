@@ -42,7 +42,7 @@ const AboutTwo = () => {
                         <div className="w-[100%]">
                           <img
                             src={img1}
-                            alt=""
+                            alt="images"
                             className="h-[360px] w-[100%]"
                           />
                         </div>
@@ -51,7 +51,7 @@ const AboutTwo = () => {
                         <div className="w-[100%] md:block hidden">
                           <img
                             src={img2}
-                            alt=""
+                            alt="images"
                             className="h-[360px] w-[100%]"
                           />
                         </div>
@@ -76,7 +76,7 @@ const AboutTwo = () => {
                         <div className="w-[100%]">
                           <img
                             src={img3}
-                            alt=""
+                            alt="images"
                             className="h-[360px] w-[100%]"
                           />
                         </div>

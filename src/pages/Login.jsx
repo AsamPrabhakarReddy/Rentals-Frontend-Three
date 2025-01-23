@@ -177,12 +177,12 @@ const Login = () => {
                         </div>
 
                         <button className="w-full flex text-black font-medium items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
-                          <img src={Google} alt="" className="w-5 h-5" />
+                          <img src={Google} alt="images" className="w-5 h-5" />
                           Sign in with Google
                         </button>
 
                         <button className="w-full flex text-black font-medium items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
-                          <img src={Apple} alt="" className="w-5 h-5" />
+                          <img src={Apple} alt="images" className="w-5 h-5" />
                           Sign in with Apple
                         </button>
 

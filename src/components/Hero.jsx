@@ -114,7 +114,7 @@ const Hero = () => {
         <div className="block lg:hidden border-navColor max-w-[1400px] mx-auto w-[100%]">
           <div className="grid grid-cols-2 gap-4 mt-8">
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
-              <span>Tenant Screening</span>
+              <span>Credit Boost</span>
             </div>
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
               <span>Rental Listing</span>

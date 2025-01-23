@@ -7,9 +7,9 @@ const Reviews = () => {
         <div className="w-full">
           <div className="w-full p-4 mx-auto max-w-[1400px]">
             <div className="text-center flex justify-center items-center">
-              <h1 className="font-bold  md:text-4xl text-2xl">
+              <h2 className="font-bold  md:text-4xl text-2xl">
                 Real stories, Real results
-              </h1>
+              </h2>
             </div>
 
             <div className="pt-12">
@@ -18,9 +18,9 @@ const Reviews = () => {
                   <div className="w-full p-6 shadow rounded border-[1px]">
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-sm uppercase font-medium text-mainColor">
+                        <h5 className="text-sm uppercase font-medium text-mainColor">
                           Dean C., Senior Software Engineer
-                        </h2>
+                        </h5>
                       </div>
                       <div className="flex flex-row">
                         <img src={Star} alt="star" className="w-5 h-5" />
@@ -30,9 +30,9 @@ const Reviews = () => {
                         <img src={Star} alt="star" className="w-5 h-5" />
                       </div>
                       <div>
-                        <h1 className="font-bold text-2xl">
+                        <h3 className="font-bold text-2xl">
                           Great experience so far
-                        </h1>
+                        </h3>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -49,9 +49,9 @@ const Reviews = () => {
                   <div className="w-full p-6 shadow rounded border-[1px]">
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-sm uppercase font-medium text-mainColor">
+                        <h5 className="text-sm uppercase font-medium text-mainColor">
                           Roberto B., Executive Vice President
-                        </h2>
+                        </h5>
                       </div>
                       <div className="flex flex-row">
                         <img src={Star} alt="star" className="w-5 h-5" />
@@ -61,9 +61,9 @@ const Reviews = () => {
                         <img src={Star} alt="star" className="w-5 h-5" />
                       </div>
                       <div>
-                        <h1 className="font-bold text-2xl">
+                        <h3 className="font-bold text-2xl">
                           Simple and precious
-                        </h1>
+                        </h3>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -82,9 +82,9 @@ const Reviews = () => {
                   <div className="w-full p-6 shadow rounded border-[1px]">
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-sm uppercase font-medium text-mainColor">
+                        <h5 className="text-sm uppercase font-medium text-mainColor">
                           Lee E., Director of Information Technology
-                        </h2>
+                        </h5>
                       </div>
                       <div className="flex flex-row">
                         <img src={Star} alt="star" className="w-5 h-5" />
@@ -94,9 +94,9 @@ const Reviews = () => {
                         <img src={Star} alt="star" className="w-5 h-5" />
                       </div>
                       <div>
-                        <h1 className="font-bold text-2xl">
+                        <h3 className="font-bold text-2xl">
                           Simple and affordable
-                        </h1>
+                        </h3>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -113,9 +113,9 @@ const Reviews = () => {
                   <div className="w-full p-6 shadow rounded  border-[1px]">
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-sm uppercase font-medium text-mainColor">
+                        <h5 className="text-sm uppercase font-medium text-mainColor">
                           alshya belgium
-                        </h2>
+                        </h5>
                       </div>
                       <div className="flex flex-row">
                         <img src={Star} alt="star" className="w-5 h-5" />
@@ -125,9 +125,9 @@ const Reviews = () => {
                         <img src={Star} alt="star" className="w-5 h-5" />
                       </div>
                       <div>
-                        <h1 className="font-bold text-2xl">
+                        <h3 className="font-bold text-2xl">
                           Easy to Use and Organized Platform
-                        </h1>
+                        </h3>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -146,7 +146,7 @@ const Reviews = () => {
                   <div className="w-full p-6 shadow rounded border-[1px]">
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-sm uppercase font-medium text-mainColor">gabriew gabel</h2>
+                        <h5 className="text-sm uppercase font-medium text-mainColor">gabriew gabel</h5>
                       </div>
                       <div className="flex flex-row">
                         <img src={Star} alt="star" className="w-5 h-5" />
@@ -156,9 +156,9 @@ const Reviews = () => {
                         <img src={Star} alt="star" className="w-5 h-5" />
                       </div>
                       <div>
-                        <h1 className="font-bold text-2xl">
+                        <h3 className="font-bold text-2xl">
                           Seamless Experience for Landlords and Tenants
-                        </h1>
+                        </h3>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -176,7 +176,7 @@ const Reviews = () => {
                   <div className="w-full p-6 shadow rounded border-[1px]">
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-sm uppercase font-medium text-mainColor">suneel narine</h2>
+                        <h5 className="text-sm uppercase font-medium text-mainColor">suneel narine</h5>
                       </div>
                       <div className="flex flex-row">
                         <img src={Star} alt="star" className="w-5 h-5" />
@@ -186,9 +186,9 @@ const Reviews = () => {
                         <img src={Star} alt="star" className="w-5 h-5" />
                       </div>
                       <div>
-                        <h1 className="font-bold text-2xl">
+                        <h3 className="font-bold text-2xl">
                           Efficient Streamlined Rental Process
-                        </h1>
+                        </h3>
                       </div>
                       <div>
                         <p className="text-gray-600">

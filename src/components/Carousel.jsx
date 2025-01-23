@@ -13,9 +13,9 @@ const Carousel = () => {
               <div className="justify-center w-full ">
                 <div className="w-full max-w-[1400px] mx-auto space-y-4">
                   <div className="pt-4">
-                    <h1 className="mx-auto max-w-[800px] text-center text-2xl md:text-4xl font-bold tracking-tight">
+                    <h3 className="mx-auto max-w-[800px] text-center text-2xl md:text-4xl font-bold tracking-tight">
                       Empowering landlords & tenants.
-                    </h1>
+                    </h3>
                   </div>
 
                   <div className="text-center">
@@ -38,14 +38,14 @@ const Carousel = () => {
                           <div className="flex justify-center items-center">
                             <img
                               src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-agent-lg-1.webp"
-                              alt=""
+                              alt="images"
                               className="w-32 h-32"
                             />
                           </div>
                           <div className="flex justify-center items-center">
-                            <h1 className="text-2xl text-colorTwo font-bold">
+                            <h4 className="text-2xl text-colorTwo font-bold">
                               Online Rent Collection
-                            </h1>
+                            </h4>
                           </div>
 
                           <div className="flex justify-center items-center text-gray-600 text-center">
@@ -71,15 +71,15 @@ const Carousel = () => {
                           <div className="flex justify-center items-center">
                             <img
                               src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-sell-lg-1.webp"
-                              alt=""
+                              alt="images"
                               className="w-32 h-32"
                             />
                           </div>
 
                           <div className="flex justify-center items-center">
-                            <h1 className=" text-2xl text-colorTwo font-bold">
+                            <h4 className=" text-2xl text-colorTwo font-bold">
                               Maintenance Tracking
-                            </h1>
+                            </h4>
                           </div>
 
                           <div className="flex justify-center items-center text-gray-600 text-center">
@@ -104,15 +104,15 @@ const Carousel = () => {
                           <div className="flex justify-center items-center">
                             <img
                               src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-rent-lg-1.webp"
-                              alt=""
+                              alt="images"
                               className="w-32 h-32"
                             />
                           </div>
 
                           <div className="flex justify-center items-center">
-                            <h1 className=" text-2xl text-colorTwo font-bold">
+                            <h4 className=" text-2xl text-colorTwo font-bold">
                               Accounting Dashboard
-                            </h1>
+                            </h4>
                           </div>
 
                           <div className="flex justify-center items-center text-gray-600 text-center">
@@ -145,9 +145,9 @@ const Carousel = () => {
               <div className="justify-center w-full ">
                 <div className="w-full max-w-[1400px] mx-auto space-y-4">
                   <div className="pt-4">
-                    <h1 className="mx-auto max-w-[1000px] text-center text-2xl  md:text-4xl font-bold tracking-tight">
+                    <h2 className="mx-auto max-w-[1000px] text-center text-2xl  md:text-4xl font-bold tracking-tight">
                       We manage rental properties effectively
-                    </h1>
+                    </h2>
                   </div>
 
                   <div className="text-center">
@@ -162,9 +162,9 @@ const Carousel = () => {
                       <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-0 gap-4">
                         <div className="flex flex-col justify-center space-y-3 md:p-8 p-2">
                           <div className="font-bold text-2xl lg:text-4xl text-headingColor w-[100%]">
-                            <h1 className="md:text-start text-center">
+                            <h3 className="md:text-start text-center">
                               Customizable Lease Agreements
-                            </h1>
+                            </h3>
                           </div>
                           <div className="text-gray-600">
                             <p className="md:text-start text-center">
@@ -182,7 +182,7 @@ const Carousel = () => {
                         <div className="w-[100%]">
                           <img
                             src="https://images.pexels.com/photos/4569340/pexels-photo-4569340.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                            alt=""
+                            alt="images"
                             className="h-[360px] w-[100%]"
                           />
                         </div>
@@ -191,15 +191,15 @@ const Carousel = () => {
                         <div className="w-[100%] md:block hidden">
                           <img
                             src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                            alt=""
+                            alt="images"
                             className="h-[360px] w-[100%]"
                           />
                         </div>
                         <div className="md:hidden flex flex-col justify-center space-y-3 md:p-12 p-2">
                           <div className="font-bold text-2xl lg:text-4xl text-headingColor w-[100%]">
-                            <h1 className="md:text-start text-center">
+                            <h3 className="md:text-start text-center">
                               Maintenance Request Tracking
-                            </h1>
+                            </h3>
                           </div>
                           <div className="text-gray-600">
                             <p className="md:text-start text-center">
@@ -216,9 +216,9 @@ const Carousel = () => {
                         </div>
                         <div className="md:flex hidden flex-col justify-center space-y-3 md:p-12 p-2">
                           <div className="font-bold text-2xl md:text-4xl text-headingColor w-[100%]">
-                            <h1 className="md:text-start text-center">
+                            <h3 className="md:text-start text-center">
                               Maintenance Request Tracking
-                            </h1>
+                            </h3>
                           </div>
                           <div className="text-gray-600">
                             <p className="md:text-start text-center">
@@ -236,7 +236,7 @@ const Carousel = () => {
                         <div className="w-[100%] md:hidden block">
                           <img
                             src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                            alt=""
+                            alt="images"
                             className="h-[360px] w-[100%]"
                           />
                         </div>
@@ -259,10 +259,10 @@ const Carousel = () => {
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-4">
                     <div className="flex flex-col justify-center space-y-4">
                       <div className="font-bold text-2xl md:text-4xl text-headingColor w-[100%]">
-                        <h1 className="md:text-start text-center">
+                        <h2 className="md:text-start text-center">
                           Access lawyer-reviewed, state-specific lease agreement
                           templates
-                        </h1>
+                        </h2>
                       </div>
 
                       <div className="text-gray-600 pt-2">
@@ -277,31 +277,31 @@ const Carousel = () => {
                       <div className="flex flex-col space-y-2 pt-2">
                         <div className="flex flex-row items-center text-gray-600">
                           <TiTick size={20} />
-                          <h1 className="ml-1">
+                          <h5 className="ml-1">
                             Level up your landlording simply and confidently
-                          </h1>
+                          </h5>
                         </div>
                         <div className="flex flex-row items-center text-gray-600">
                           <TiTick size={20} />
-                          <h1 className="ml-1">
+                          <h5 className="ml-1">
                             Take the guesswork out of managing your business
-                          </h1>
+                          </h5>
                         </div>
 
                         <div className="flex flex-row items-center text-gray-600">
                           <TiTick size={20} />
-                          <h1 className="ml-1">
+                          <h5 className="ml-1">
                             Track your listing&apos;s performance and trends in
                             your market
-                          </h1>
+                          </h5>
                         </div>
 
                         <div className="flex flex-row items-center text-gray-600">
                           <TiTick size={20} />
-                          <h1 className="ml-1">
+                          <h5 className="ml-1">
                             Save time and effort with prioritized responses to
                             your questions.
-                          </h1>
+                          </h5>
                         </div>
                       </div>
 
@@ -332,9 +332,9 @@ const Carousel = () => {
                               </div>
                             </div>
                             <div className="flex justify-center items-center">
-                              <h1 className="text-2xl text-headingColor font-bold text-center">
+                              <h3 className="text-2xl text-headingColor font-bold text-center">
                                 Rent Analysis Reports
-                              </h1>
+                              </h3>
                             </div>
 
                             <div className="flex justify-center items-center text-sideHeading text-center">
@@ -362,9 +362,9 @@ const Carousel = () => {
                               </div>
                             </div>
                             <div className="flex justify-center items-center">
-                              <h1 className="text-2xl text-headingColor font-bold text-center">
+                              <h3 className="text-2xl text-headingColor font-bold text-center">
                                 Tenant Portal
-                              </h1>
+                              </h3>
                             </div>
 
                             <div className="flex justify-center items-center text-sideHeading text-center">
@@ -392,9 +392,9 @@ const Carousel = () => {
                               </div>
                             </div>
                             <div className="flex justify-center items-center">
-                              <h1 className="text-2xl text-headingColor font-bold text-center">
+                              <h3 className="text-2xl text-headingColor font-bold text-center">
                                 Syndicated Listings
-                              </h1>
+                              </h3>
                             </div>
 
                             <div className="flex justify-center items-center text-sideHeading text-center">
@@ -422,9 +422,9 @@ const Carousel = () => {
                               </div>
                             </div>
                             <div className="flex justify-center items-center">
-                              <h1 className="text-2xl text-headingColor font-bold text-center">
+                              <h3 className="text-2xl text-headingColor font-bold text-center">
                                 Late Fees Reminders
-                              </h1>
+                              </h3>
                             </div>
 
                             <div className="flex justify-center items-center text-sideHeading text-center">
