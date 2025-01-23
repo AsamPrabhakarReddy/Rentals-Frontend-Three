@@ -84,14 +84,10 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out select-none ${
-        isScrolled ? "bg-white shadow-md py-6" : "bg-white py-6"
+        isScrolled ? "bg-white lg:py-4 py-6" : "bg-white py-6"
       }`}
     >
-      <div
-        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6  ${
-          isScrolled ? "lg:py-0" : "lg:py-[12px] lg:bg-secNavColor lg:shadow"
-        }`}
-      >
+      <div className="lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6 lg:py-[12px] lg:bg-secNavColor lg:shadow">
         <a href="/" className="flex items-center flex-row">
           <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6" />
 
