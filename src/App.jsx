@@ -27,6 +27,8 @@ import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
+import RentalListing from "./pages/RentalListing";
+import RentalApplications from "./pages/RentalApplications";
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -69,6 +71,22 @@ function App() {
             }
           ></Route>
 
+          <Route
+            path="/rental-listings"
+            element={
+              <PublicRoute>
+                <RentalListing />
+              </PublicRoute>
+            }
+          ></Route>
+          <Route
+            path="/rental-applications"
+            element={
+              <PublicRoute>
+                <RentalApplications />
+              </PublicRoute>
+            }
+          ></Route>
           <Route
             path="/pricing"
             element={

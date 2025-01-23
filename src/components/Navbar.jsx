@@ -362,7 +362,7 @@ const Blog = () => {
   return (
     <div className="grid grid-cols-3 gap-4 ">
       <a
-        href="/learn-about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaUser className="mb-2 text-xl text-mainColor" />
@@ -371,7 +371,7 @@ const Blog = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdCable className="mb-2 text-xl text-mainColor" />
@@ -380,7 +380,7 @@ const Blog = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiPaperclip className="mb-2 text-xl text-mainColor" />
@@ -390,7 +390,7 @@ const Blog = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <IoTicketSharp className="mb-2 text-xl text-mainColor" />
@@ -400,7 +400,7 @@ const Blog = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaCreditCard className="mb-2 text-xl text-mainColor" />
@@ -410,7 +410,7 @@ const Blog = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaLocationArrow className="mb-2 text-xl text-mainColor" />
@@ -426,7 +426,7 @@ const Homebar = () => {
   return (
     <div className="grid grid-cols-4 gap-4 ">
       <a
-        href="/learn-about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaHouseCircleCheck className="mb-2 text-xl text-mainColor" />
@@ -435,7 +435,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/rental-applications"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaDollarSign className="mb-2 text-xl text-mainColor" />
@@ -444,7 +444,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaUserAlt className="mb-2 text-xl text-mainColor" />
@@ -454,7 +454,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiPieChart className="mb-2 text-xl text-mainColor" />
@@ -464,7 +464,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <GrTechnology className="mb-2 text-xl text-mainColor" />
@@ -474,7 +474,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdPayment className="mb-2 text-xl text-mainColor" />
@@ -484,7 +484,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdOutlineHomeRepairService className="mb-2 text-xl text-mainColor" />
@@ -493,7 +493,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdOutlineWorkHistory className="mb-2 text-xl text-mainColor" />
@@ -503,7 +503,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaCalculator className="mb-2 text-xl text-mainColor" />
@@ -513,7 +513,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdAccountBalanceWallet className="mb-2 text-xl text-mainColor" />
@@ -523,7 +523,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/about-us"
+        href="/rental-listings"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <RiCriminalFill className="mb-2 text-xl text-mainColor" />

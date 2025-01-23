@@ -1,7 +1,8 @@
 import React from 'react'
-import img1 from "../assets/landlord1.jpg"
-import img2 from "../assets/landlord2.jpg"
-import img3 from "../assets/landlord3.jpg"
+import img1 from "../assets/landlord6.jpg"
+import img2 from "../assets/landlord4.jpg"
+import img3 from "../assets/landlord5.jpg"
+
 const AboutTwo = () => {
   return (
     <div className="bg-white">
