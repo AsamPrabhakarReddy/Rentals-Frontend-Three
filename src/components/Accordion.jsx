@@ -33,7 +33,7 @@ const Accordion = ({ title, answer }) => {
         }`}
       >
         <div className="overflow-hidden md:mx-0 mx-1 md:text-start text-center md:pl-8">
-          <span className="md:text-lg text-headingColor">{answer}</span>
+          <span className=" text-headingColor leading-normal">{answer}</span>
         </div>
       </div>
     </div>

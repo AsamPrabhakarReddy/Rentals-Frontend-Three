@@ -28,13 +28,8 @@ import { FiChevronDown, FiPaperclip, FiPieChart } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { GrResources, GrTechnology } from "react-icons/gr";
 import { IoTicketSharp } from "react-icons/io5";
-import { VscLaw } from "react-icons/vsc";
 import HomeImg from "../assets/Home.svg";
 import { FaAngleDown } from "react-icons/fa";
-// import { AnimatePresence, motion } from "framer-motion";
-import { SiPaloaltosoftware } from "react-icons/si";
-import { useNavigate } from "react-router-dom";
-
 
 const SecNavbar = () => {
   // const [isScrolled, setIsScrolled] = useState(false);
@@ -121,7 +116,7 @@ const SecNavbar = () => {
             href="/login"
             className={`border-[1px] relative px-8 py-[10px] rounded-full text-sm border-mainColor transition duration-500 bg-mainColor ${
               isScrolled
-                ? "border-mainColor bg-mainColor text-white font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0  before:duration-300 before:ease-out hover:text-white hover:before:h-40 hover:before:w-48 "
+                ? "border-mainColor bg-mainColor text-white font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0  before:duration-300 before:ease-out before:bg-white hover:text-mainColor   hover:before:h-40 hover:before:w-48 "
                 : "border-navGray font-medium text-white"
             }`}
           >
@@ -147,295 +142,295 @@ const SecNavbar = () => {
           </button>
         </div>
 
-         <div
-                  className={
-                    !isMobileMenuOpen
-                      ? "lg:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-                      : "lg:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-gray-300 ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
-                  }
-                >
-                <a href="/" className="flex items-center flex-row ml-4 pt-4 ">
-                    <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6 " />
-                    <span className="lg:text-2xl text-xl ml-1 mt-[2px] transition-all duration-300 ease-in-out font-bold">RMA Housing.</span>
-                </a>
-        
-                  <ul className="p-4">
-                    <li className="p-4 border-b border-gray-600">
-                      <div
-                        onClick={() => toggleMobileDropdown("subscription")}
-                        className="flex items-center justify-between cursor-pointer text-navGray"
-                      >
-                        Landlord
-                        <FaAngleDown
-                          className={`transition-transform ${
-                            openDropdownMobile === "subscription"
-                              ? "rotate-180 text-mainColor"
-                              : ""
-                          }`}
-                        />
-                      </div>
-                      <AnimatePresence>
-                        {openDropdownMobile === "subscription" && (
-                          <motion.ul
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            className="pl-4 mt-6 space-y-2"
-                          >
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Rental Listings
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Rental Applications
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                               Tenant Screening
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Credit, Criminal, Eviction Reports
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Digital Leases
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                               Online Rent Collection
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                               FastPay
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Maintenance Tracking
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                               Rent Price Analysis
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                               Rental Property Calculator
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Property Accounting
-                              </a>
-                            </li>
-                           
-                          </motion.ul>
-                        )}
-                      </AnimatePresence>
-                    </li>
-                    <li className="p-4 border-b border-gray-600">
-                      <div
-                        onClick={() => toggleMobileDropdown("home")}
-                        className="flex items-center justify-between cursor-pointer text-navGray"
-                      >
-                        Tenants
-                        <FaAngleDown
-                          className={`transition-transform ${
-                            openDropdownMobile === "home"
-                              ? "rotate-180 text-mainColor"
-                              : ""
-                          }`}
-                        />
-                      </div>
-                      <AnimatePresence>
-                        {openDropdownMobile === "home" && (
-                          <motion.ul
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            className="pl-4 mt-6 space-y-2"
-                          >
-                           <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                               Renter Profile
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                               Online Rent Payments
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Digital Lease Signing
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                               Maintenance Tickets
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                              CreditBoost
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/rental-listings"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                              >
-                                Find Next Place
-                              </a>
-                            </li>
-                          </motion.ul>
-                        )}
-                      </AnimatePresence>
-                    </li>
-                    <li className="p-4 border-b border-gray-600">
-                      <div
-                        onClick={() => toggleMobileDropdown("products")}
-                        className="flex items-center justify-between cursor-pointer text-navGray"
-                      >
-                        Resources
-                        <FaAngleDown
-                          className={`transition-transform ${
-                            openDropdownMobile === "products"
-                              ? "rotate-180 text-mainColor"
-                              : ""
-                          }`}
-                        />
-                      </div>
-                      <AnimatePresence>
-                        {openDropdownMobile === "products" && (
-                          <motion.ul
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            className="pl-4 mt-6 space-y-2"
-                          >
-                            <li className="text-navGray">
-                              <a
-                                href="/about-us"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                                 About Us
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/contact-us"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                                 Contact Us
-                              </a>
-                            </li>
-                            <li className="text-navGray">
-                              <a
-                                href="/testimonials"
-                                className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                              >
-                                Testimonials
-                              </a>
-                            </li>
-                          </motion.ul>
-                        )}
-                      </AnimatePresence>
-                    </li>
-        
-                    <li className="p-4 border-b border-gray-600">
+        <div
+          className={
+            !isMobileMenuOpen
+              ? "lg:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
+              : "lg:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-gray-300 ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+          }
+        >
+          <a href="/" className="flex items-center flex-row ml-4 pt-4 ">
+            <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6 " />
+            <span className="lg:text-2xl text-xl ml-1 mt-[2px] transition-all duration-300 ease-in-out font-bold">
+              RMA Housing.
+            </span>
+          </a>
+
+          <ul className="p-4">
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("subscription")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Landlord
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "subscription"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "subscription" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
                       <a
-                        href="/login"
-                        className="flex items-center justify-between cursor-pointer text-navGray"
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
                       >
-                        Login
+                        Rental Listings
                       </a>
                     </li>
-        
-                    <li className="p-4 border-b border-gray-600">
+                    <li className="text-navGray">
                       <a
-                        href="/register"
-                        className="flex items-center justify-between cursor-pointer text-navGray"
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
                       >
-                        Register
+                        Rental Applications
                       </a>
                     </li>
-                    
-        
-                    <li className="p-4 border-b border-gray-600">
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        Tenant Screening
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Credit, Criminal, Eviction Reports
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Digital Leases
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        Online Rent Collection
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        FastPay
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Maintenance Tracking
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        Rent Price Analysis
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Rental Property Calculator
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Property Accounting
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("home")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Tenants
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "home"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "home" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        Renter Profile
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Online Rent Payments
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Digital Lease Signing
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        Maintenance Tickets
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        CreditBoost
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/rental-listings"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                      >
+                        Find Next Place
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("products")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Resources
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "products"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "products" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
+                      <a
+                        href="/about-us"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li className="text-navGray">
                       <a
                         href="/contact-us"
-                        className="flex items-center justify-between cursor-pointer text-navGray"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
                       >
                         Contact Us
                       </a>
                     </li>
-                  </ul>
+                    <li className="text-navGray">
+                      <a
+                        href="/testimonials"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+        "
+                      >
+                        Testimonials
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/login"
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Login
+              </a>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/register"
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Register
+              </a>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/contact-us"
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
 
           <div className="px-4">
             <h5 className="p-4 text-xl text-footerLinks font-semibold">
@@ -720,8 +715,6 @@ const Homebar = () => {
         </span>
       </a>
 
-    
-
       <a
         href="/about-us"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
@@ -747,7 +740,9 @@ const Homebar = () => {
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdPayment className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs text-center font-semibold text-gray-700">Fastpay</span>
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Fastpay
+        </span>
       </a>
 
       <a
@@ -810,14 +805,18 @@ const ContactBar = () => {
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaNewspaper className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs text-center font-semibold text-gray-700">About Us</span>
+        <span className="text-xs text-center font-semibold text-gray-700">
+          About Us
+        </span>
       </a>
       <a
         href="/about-us"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdArticle className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs text-center font-semibold text-gray-700">Contact Us</span>
+        <span className="text-xs text-center font-semibold text-gray-700">
+          Contact Us
+        </span>
       </a>
       <a
         href="/about-us"

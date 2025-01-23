@@ -87,7 +87,11 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-md py-6" : "bg-white py-6"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
+      <div
+        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6  ${
+          isScrolled ? "lg:py-0" : "lg:py-[12px] lg:bg-secNavColor lg:shadow"
+        }`}
+      >
         <a href="/" className="flex items-center flex-row">
           <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6" />
 
@@ -113,8 +117,8 @@ const Navbar = () => {
             href="/login"
             className={`border-[1px] relative font-medium px-8 py-[10px] rounded-full text-sm  transition duration-500 ${
               isScrolled
-                ? "border-mainColor bg-mainColor text-white font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0  before:duration-300 before:ease-out hover:text-white hover:before:h-40 hover:before:w-48 "
-                : "border-mainColor bg-mainColor text-white"
+                ? "border-mainColor bg-mainColor text-white font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0  before:duration-300 before:ease-out before:bg-white hover:text-mainColor hover:before:h-40 hover:before:w-48 "
+                : "border-mainColor bg-mainColor text-white font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0  before:duration-300 before:ease-out before:bg-white hover:text-mainColor hover:before:h-40 hover:before:w-48 "
             }`}
           >
             <span className="relative z-10">Get Started</span>
@@ -153,9 +157,11 @@ const Navbar = () => {
           </a> */}
 
           <a href="/" className="flex items-center flex-row ml-4 pt-4 ">
-          <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6 " />
-            <span className="lg:text-2xl text-xl ml-1 mt-[2px] transition-all duration-300 ease-in-out font-bold">RMA Housing.</span>
-        </a>
+            <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6 " />
+            <span className="lg:text-2xl text-xl ml-1 mt-[2px] transition-all duration-300 ease-in-out font-bold">
+              RMA Housing.
+            </span>
+          </a>
 
           <ul className="p-4">
             <li className="p-4 border-b border-gray-600">
@@ -202,7 +208,7 @@ const Navbar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                       Tenant Screening
+                        Tenant Screening
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -227,7 +233,7 @@ const Navbar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                       Online Rent Collection
+                        Online Rent Collection
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -235,7 +241,7 @@ const Navbar = () => {
                         href="/rental-listings"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
                       >
-                       FastPay
+                        FastPay
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -252,7 +258,7 @@ const Navbar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                       Rent Price Analysis
+                        Rent Price Analysis
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -260,7 +266,7 @@ const Navbar = () => {
                         href="/rental-listings"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
                       >
-                       Rental Property Calculator
+                        Rental Property Calculator
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -271,7 +277,6 @@ const Navbar = () => {
                         Property Accounting
                       </a>
                     </li>
-                   
                   </motion.ul>
                 )}
               </AnimatePresence>
@@ -298,13 +303,13 @@ const Navbar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                   <li className="text-navGray">
+                    <li className="text-navGray">
                       <a
                         href="/rental-listings"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                       Renter Profile
+                        Renter Profile
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -312,7 +317,7 @@ const Navbar = () => {
                         href="/rental-listings"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
                       >
-                       Online Rent Payments
+                        Online Rent Payments
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -329,7 +334,7 @@ const Navbar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                       Maintenance Tickets
+                        Maintenance Tickets
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -337,7 +342,7 @@ const Navbar = () => {
                         href="/rental-listings"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
                       >
-                      CreditBoost
+                        CreditBoost
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -380,7 +385,7 @@ const Navbar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                         About Us
+                        About Us
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -389,7 +394,7 @@ const Navbar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                         Contact Us
+                        Contact Us
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -423,7 +428,6 @@ const Navbar = () => {
                 Register
               </a>
             </li>
-            
 
             <li className="p-4 border-b border-gray-600">
               <a
@@ -457,7 +461,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
       </div>
     </nav>
   );

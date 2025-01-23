@@ -157,17 +157,20 @@ const Pricing = () => {
                             className="mb-8 space-y-4 text-left w-[100%]border-2 border-green-500 list-disc"
                           >
                             {plan.points.map((point, index) => (
-                              <li class="flex items-center space-x-2">
+                              <li
+                                key={point}
+                                className="flex items-center space-x-2"
+                              >
                                 <svg
-                                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
                                   fill="currentColor"
                                   viewBox="0 0 20 20"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"
+                                    clipRule="evenodd"
                                   ></path>
                                 </svg>
                                 <span>{point}</span>
@@ -176,7 +179,7 @@ const Pricing = () => {
                           </ul>
                           <a
                             href="/login"
-                            class="text-white bg-mainColor font-medium rounded-full text-sm px-8 py-3 my-3 text-center "
+                            className="text-white bg-mainColor font-medium rounded-full text-sm px-8 py-3 my-3 text-center "
                           >
                             Get started
                           </a>
@@ -211,11 +214,11 @@ const Pricing = () => {
                           With Unlimited Plus, you can also add five custom questions as well as tenant screening reports to ensure you have all the information you need to make a decision."
                   />
                   <Accordion
-                    title="Can you edit the settings on an Rentals. online rental application?"
+                    title="Can you edit the settings on an online rental application?"
                     answer="Yes, you can change the default settings of Rentals. rental applications to suit your needs. Examples include requiring one to 10 years of residence history, one to 10 years of work history, income verification, our standard questions, and adding tenant screening reports."
                   />
                   <Accordion
-                    title="Does Rentals. conduct automated landlord reference checks?"
+                    title="Does RMA Housing conduct automated landlord reference checks?"
                     answer="Yes. When prospective tenants submit their previous landlords' contact information, our system automatically performs landlord reference checks to gather information on their renting experience with them. If we cannot contact their previous landlords due to their policies, you can still reach out to them directly with the provided contact information."
                   />
                   <Accordion

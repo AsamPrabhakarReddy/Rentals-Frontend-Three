@@ -99,7 +99,7 @@ const Register = () => {
       <NavBar />
       {loading && <Spinner />}
       <div>
-        <section className="text-black md:py-0 py-8">
+        <section className="text-black md:py-4 py-8">
           <div className="max-w-[1400px] mx-auto">
             <div className="lg:mt-28 mt-20">
               <div className="flex flex-col justify-center px-6 pb-8">
@@ -161,7 +161,7 @@ const Register = () => {
                             type="text"
                             name="fullName"
                             id="fullName"
-                            className="border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                            className="border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                             placeholder="Your Full Name"
                             required
                             onChange={(e) => setFullName(e.target.value)}
@@ -180,7 +180,7 @@ const Register = () => {
                             type="email"
                             name="email"
                             id="email"
-                            className="border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                            className="border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                             placeholder="name@domain.com"
                             required
                             onChange={(e) => setEmail(e.target.value)}
@@ -202,7 +202,7 @@ const Register = () => {
                               id="password"
                               value={password}
                               placeholder="••••••••"
-                              className="border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              className="border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                               required
                               onChange={(e) => setPassword(e.target.value)}
                             />

@@ -12,6 +12,8 @@ export default {
         termsParagraph: "text-sm text-blue-900",
         navColor: "rgba(255, 255, 255, 0.1)",
         whiteShade: "#e7e5df",
+        // secNavColor: "#181A1C",
+        secNavColor: "#f8f9fb",
       },
     },
   },

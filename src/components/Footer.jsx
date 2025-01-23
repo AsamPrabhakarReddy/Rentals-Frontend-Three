@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="pb-8 mb-8 border-b border-gray-400">
             <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-7 ">
               <div className="mb-12 md:mb-4 ">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-bold tracking-wider  flex justify-center uppercase items-center mt-1 text-footerLinks">
                   Services
                 </h4>
                 <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-12 md:mb-4 ">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-bold tracking-wider  flex justify-center uppercase items-center mt-1 text-footerLinks">
                   Connect
                 </h4>
                 <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -108,7 +108,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-12 md:mb-4 ">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-bold tracking-wider  flex justify-center uppercase items-center mt-1 text-footerLinks">
                   Connect
                 </h4>
                 <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -156,7 +156,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-12 md:mb-4">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-semibold tracking-wider  flex justify-center uppercase items-center mt-1 text-footerLinks">
                   Company
                 </h4>
                 <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -204,7 +204,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-12 md:mb-4">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-bold tracking-wider  flex justify-center uppercase items-center mt-1 text-footerLinks">
                   Company
                 </h4>
                 <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -252,7 +252,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-12 md:mb-4 md:hidden block">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-bold tracking-wider  flex justify-center items-center uppercase mt-1 text-footerLinks">
                   Product
                 </h4>
                 <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -300,7 +300,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-12 md:mb-4 col-span-2">
-                <h4 className="text-sm leading-5 font-bold tracking-wider uppercase flex justify-center items-center mt-1 text-footerLinks">
+                <h4 className="text-sm leading-5 font-bold tracking-wider  flex justify-center uppercase items-center mt-1 text-footerLinks">
                   Contact Us
                 </h4>
                 <form action="">
@@ -310,7 +310,7 @@ const Footer = () => {
                         type="email"
                         name="email"
                         required
-                        className=" appearance-none flex md:w-9/12 w-10/12 border border-transparent px-5 py-3 text-base leading-6 rounded-md text-gray-800 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out"
+                        className="appearance-none flex md:w-9/12 w-10/12 border border-transparent px-5 py-3 text-base leading-6 rounded-md text-gray-800 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
                         placeholder="Enter your email"
                       />
                     </div>
