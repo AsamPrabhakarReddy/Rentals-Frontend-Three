@@ -29,6 +29,8 @@ import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
 import RentalListing from "./pages/RentalListing";
 import RentalApplications from "./pages/RentalApplications";
+import ForgotPassword from "./pages/ForgotPassword";
+
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -116,6 +118,15 @@ function App() {
             element={
               <PublicRoute>
                 <Privacy />
+              </PublicRoute>
+            }
+          ></Route>
+
+          <Route
+            path="/forgotPassword"
+            element={
+              <PublicRoute>
+                <ForgotPassword />
               </PublicRoute>
             }
           ></Route>
@@ -210,7 +221,6 @@ function App() {
               </ProtectedRoute>
             }
           ></Route>
-
         </Routes>
       )}
     </BrowserRouter>

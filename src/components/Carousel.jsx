@@ -2,6 +2,9 @@ import { FaBuilding, FaHandshake } from "react-icons/fa";
 import { IoDocumentAttach } from "react-icons/io5";
 import { MdHomeWork } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
+import One from "../assets/One.webp";
+import Three from "../assets/Three.webp";
+import Two from "../assets/Two.webp";
 
 const Carousel = () => {
   return (
@@ -36,11 +39,7 @@ const Carousel = () => {
                       <div className="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                         <div className="space-y-4">
                           <div className="flex justify-center items-center">
-                            <img
-                              src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-agent-lg-1.webp"
-                              alt="images"
-                              className="w-32 h-32"
-                            />
+                            <img src={One} alt="images" className="w-32 h-32" />
                           </div>
                           <div className="flex justify-center items-center">
                             <h4 className="text-2xl text-colorTwo font-bold">
@@ -69,11 +68,7 @@ const Carousel = () => {
                       <div className="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                         <div className="space-y-4">
                           <div className="flex justify-center items-center">
-                            <img
-                              src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-sell-lg-1.webp"
-                              alt="images"
-                              className="w-32 h-32"
-                            />
+                            <img src={Two} alt="images" className="w-32 h-32" />
                           </div>
 
                           <div className="flex justify-center items-center">
@@ -103,7 +98,7 @@ const Carousel = () => {
                         <div className="space-y-4">
                           <div className="flex justify-center items-center">
                             <img
-                              src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-rent-lg-1.webp"
+                              src={Three}
                               alt="images"
                               className="w-32 h-32"
                             />
@@ -211,7 +206,7 @@ const Carousel = () => {
                           </div>
 
                           <div className="text-blue-600 underline md:text-start text-center">
-                            <a href="">Manage your property</a>
+                            <a href="/login">Manage your property</a>
                           </div>
                         </div>
                         <div className="md:flex hidden flex-col justify-center space-y-3 md:p-12 p-2">
@@ -230,7 +225,7 @@ const Carousel = () => {
                           </div>
 
                           <div className="text-blue-600 underline md:text-start text-center">
-                            <a href="">Manage your property</a>
+                            <a href="/login">Manage your property</a>
                           </div>
                         </div>
                         <div className="w-[100%] md:hidden block">

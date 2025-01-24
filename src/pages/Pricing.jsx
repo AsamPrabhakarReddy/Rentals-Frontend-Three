@@ -140,7 +140,7 @@ const Pricing = () => {
                           >
                             {plan.name}
                           </h3>
-                          <p className="font-light text-gray-500 sm:text-lg">
+                          <p className="text-gray-600 sm:text-lg">
                             {plan.description}
                           </p>
                           <div className="flex justify-start items-baseline my-8">
@@ -179,7 +179,7 @@ const Pricing = () => {
                           </ul>
                           <a
                             href="/login"
-                            className="text-white bg-mainColor font-medium rounded-full text-sm px-8 py-3 my-3 text-center "
+                            className="text-white border bg-mainColor border-mainColor transition ease-in-out duration-1000 hover:text-mainColor hover:bg-white font-medium rounded-full text-sm px-8 py-3 my-3 text-center "
                           >
                             Get started
                           </a>

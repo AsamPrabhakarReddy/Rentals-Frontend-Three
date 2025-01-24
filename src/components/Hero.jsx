@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-whiteShade lg:text-start text-center px-4 ">
         <div className="max-w-[1400px] mx-auto w-[100%] mt-20 lg:mt-24 lg:px-2 space-y-4">
           <p className="uppercase font-medium text-whiteShade">
-            rent better and feel safe stronger.
+            rent better & feel safe stronger.
           </p>
           <h1 className="md:text-5xl text-4xl font-semibold text-whiteShade">
             {slides[currentIndex].heading}
@@ -66,46 +66,46 @@ const Hero = () => {
 
         <div className="border-t-[2px] xl:block hidden mt-[90px] border-navColor max-w-[1400px] mx-auto w-[100%]">
           <div className="grid grid-cols-7 gap-4 mt-8">
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Tenant Screening</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Rental Listing</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Digital Leases</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Price Analysis</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Credit Boost</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Rental Profile</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Online Payment</span>
             </div>
           </div>
 
           <div className="grid grid-cols-6 gap-4 mt-4 mx-8">
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Find Next Place</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>RMA Credits</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Property Audit</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Track Maintenance</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Landlord Resource</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>RMA Screening</span>
             </div>
           </div>
@@ -113,16 +113,16 @@ const Hero = () => {
 
         <div className="block lg:hidden border-navColor max-w-[1400px] mx-auto w-[100%]">
           <div className="grid grid-cols-2 gap-4 mt-8">
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Credit Boost</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Rental Listing</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Digital Leases</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor bg-navColor text-white font-medium ">
+            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-navColor backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Price Analysis</span>
             </div>
           </div>
